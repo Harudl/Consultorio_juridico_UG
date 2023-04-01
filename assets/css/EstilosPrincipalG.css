@@ -1,0 +1,799 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+h1{ font-size: 4em;}
+h2{ font-size: 3em;}
+h3{ font-size: 2.5em;}
+p{ font-size: 1.2em;}
+
+
+.section__titulo{
+  margin-bottom: 2rem;
+  line-height: 150%;
+}
+.section__titulo{
+    text-align: center;
+  }
+
+body{
+    background: #DFF6FF;
+/*     display: grid; */
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    background: #06283D;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 10px 10px 16px 6px rgba(0,0,0,0.35);
+    padding: 0 20px;
+    position: fixed;
+}
+
+.hero{
+    padding: rem 0 2rem;
+}
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+.logo img {
+    height: auto;
+    width: auto;
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.hamburger{
+    display: none;
+}
+.nav-bar ul{
+    display: flex;
+    margin-bottom: 0;
+}
+
+header .nav-bar ul li a{
+    display: block;
+    color: white;
+    font-size: 18px;
+    padding: 4px 9px;
+    /* border-radius: 40px; */
+    transition: 0.2s;
+    margin: 0 6px;
+    text-decoration: none;
+    border-bottom: 5px solid transparent;
+}
+
+header .nav-bar ul li .user{
+    display: block;
+    color: white;
+    font-size: 18px;
+    padding: 4px 9px;
+    border-radius: 5px;
+    transition: 0.2s;
+    margin: 0 6px;
+    text-decoration: none;
+}
+
+.nav-bar ul li a.user{
+    color: black;
+    background: white;
+}
+header .nav-bar ul li a.active{
+    /* background: white;
+    color: #06283D; */
+    transition: 0.5s;
+    border-bottom-color: white;
+    }
+header .nav-bar ul li a:hover{
+font-size: 19px;
+    transition: 0.5s;
+    } 
+
+/*--------------------------------------secciones-------------------------------*/
+#hero .logoUg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 99vh;
+    color: white;
+   background-image: linear-gradient( 0deg, rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("../img/h-4.jpg");
+   background-attachment: fixed;
+}
+
+/*-------------------------------------Nosotros------------------*/
+#QuienesSomos .containerGrid{  
+    color: black;
+   /* padding: 5rem 3rem 4rem;  */
+    padding: 100px 0px; 
+    background: #DFF6FF;
+    
+}
+.containerGrid .container-blo {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    justify-items: center;
+    /* align-items: center; */
+   align-content: center; 
+}
+
+.container-blo .imagen-con img{
+    width: 550px;
+    height: 400px;
+    border-radius: 5px;
+    
+}
+
+.container-blo .contenido{
+    border: #06283D;
+   margin-bottom: 1%; 
+   /*  color: white; */
+    color: white;
+    background-color: #256D85;
+   width: 550px;
+    height: 400px; 
+    padding:55px 55px;
+    border-radius: 5px;
+}
+.contenido h3{
+    margin: 5%;
+    text-align: center;
+}
+.descripcion {
+    text-align: justify;
+    justify-content: center;
+    margin: 2%;
+    font-size:18px;
+}
+
+/*-----------------------------------Servicios ------------------------------*/
+#ServiciosS .section__titulo{
+text-align: center;
+}
+
+#ServiciosC .containerP{
+    text-align: center; 
+    padding: 5rem 2rem 4rem;
+    background: #06283D; 
+    color: white;
+}
+
+#ServiciosC .container{
+    display: flex;  
+    text-align: center; 
+}
+
+#ServiciosC .carta{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    padding: 15px;
+    margin: 30px;
+    border-radius: 5px;
+    width: 100%;
+    height: 380px;
+    border: 2px solid darkgrey;
+
+}
+
+.carta img{
+    transition: all .4s ease-in-out;
+}
+.carta.active img{
+    transform: rotate(180deg);
+}
+
+.carta h3{
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 7px 8px;
+    color: white;
+    margin-bottom: 10px;
+    background-color: #256D85;
+    cursor: pointer;
+    margin:0px auto;
+    height: 50px;
+    width: 200px;
+
+   /* border-style:solid ;
+    border-width: 3px;
+    border-color: gray;*/
+  
+}
+.carta h3:hover{
+    margin-bottom: 5px;
+    background: #1f5c70; 
+   /*  font-size: 30px; */
+}
+.carta .desplegar{
+    transition: all .3s ease-in-out;
+    overflow: hidden;
+    max-height: 0;
+}
+.carta.active .desplegar{
+    color: white;
+    max-height: none;
+    overflow: none;
+    padding: 2px 40px;
+    text-align: justify;
+    text-shadow: 0 0 2px black;
+}
+
+.carta:first-child{
+    background-image: linear-gradient( 
+        0deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)) 
+        ,url("../img/patrocinio.jpg");
+  
+}
+.carta:nth-child(2){
+    background-image: linear-gradient( 
+        0deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)) 
+        ,url("../img/asesoria.jpg");
+      
+}
+.carta:nth-child(3){
+    background-image: linear-gradient( 
+        0deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)) 
+        ,url("../img/patrocinio.jpg");
+      
+}
+
+
+#AreaL{
+
+    padding: 100px 0px;
+    background-color: #256D85;
+}
+
+#contacto {
+    text-align: center;
+    padding: 100px 10px;
+    background-color: #DFF6FF;
+
+}
+#contacto .containerGridA{
+display: flex;
+color: white;
+}
+.containerGridA h2{
+    color: white;
+    }
+.box-container{
+    display: grid;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    padding: 10px 20px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+/*     grid-auto-rows: 550px; */
+
+}
+.box{
+border: 0.1rem solid #06283D;
+  padding: 3rem 3rem;
+  border: 5px solid #06283D;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #DFF6FF;
+
+}
+.box i{
+    height: 8rem;
+    width: 8rem;
+    line-height: 2rem;
+    border: 2px solid #06283D;
+/*     color: #256D85; */
+    background: #256D85;
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+/* .box i:hover{
+    background: #256D85;
+    color: #fff;
+} */
+.box h3{
+    display: grid;
+    font-size: 25px;
+    grid-auto-rows: 75px;
+    align-items: center;
+}
+.box p{
+ /*    font-size: 16px; */
+ font-size: 20px;
+ font-weight: 600;
+  line-height: 1.5;
+  color: #666;
+  margin-bottom: 0;
+  text-align: justify;
+}
+
+.box .contac{
+    font-size: 20px;
+  line-height: 2;
+  color: #666;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+footer.f-sect{
+    background-color: #06283D;
+    padding: 30px 0px;
+    color: white;
+
+}
+footer p{
+    text-align: center;
+    justify-content: center;
+}
+footer .icon-container {
+    text-align: center;
+    color: white;
+}
+footer .credit{
+    text-align: center;
+    padding-top: 2rem;
+    margin-top: 3rem;
+    border-top: .1rem solid #DFF6FF;
+    font-size: 1rem;
+}
+.icon-container i{
+    height: 7rem;
+    width: 7rem;
+    line-height: 2rem;
+    color: white;
+    font-size: 2.4rem;
+}
+.i-logo-t i:hover{
+   font-size: 3rem;
+   color: #00acee;
+   background: white;
+   border-radius: 10px;
+}
+.i-logo-f i:hover{
+    font-size: 3rem;
+    border-radius: 10px;
+    color: #3b5998;
+    background: white;
+ }
+ .i-logo-i i:hover{
+    font-size: 3rem;
+    border-radius: 10px;
+    background: #d6249f;
+    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);;
+ }
+
+
+/* @media only screen and (max-width: 1320px){
+    header{
+        padding: 0 50px;
+
+    }
+
+} */
+
+@media only screen and (max-width: 1100px){
+    header{
+        padding: 0 30px;
+        
+    }
+    
+
+}
+
+@media only screen and (max-width: 968px){
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger .line{
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 6px 0;
+    }
+
+    .container-blo .imagen-con img {
+        width: 650px;
+        height: 450px;
+        border-radius: 5px;
+    }
+
+    .container-blo .contenido {
+        border: #06283D;
+        margin-bottom: 1%;
+        /* color: white; */
+        color: white;
+        background-color: #256D85;
+        width: 650px;
+        height: 350px;
+        padding: 40px 25px;
+        border-radius: 5px;
+        /* font-size: 5px; */
+    }
+
+    .nav-bar{
+        height: 0;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        left: 0;
+        width: 100vw;
+        background: #06283D;
+        transition: 0.2s;
+        overflow: hidden;
+    }
+    .nav-bar.active{
+        height: 460px;
+    }
+    .nav-bar ul {
+        padding: 3px 3px;
+        line-height: 35px;
+        margin-bottom: 3em;
+        display: block;
+        width: fit-content;
+        margin: 50px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    .nav-bar.active ul{
+        opacity: 1;
+
+    }
+    .nav-bar ul li a {
+        margin-bottom: 12px;
+  
+    }
+    .nav-bar.active ul li{
+        padding-bottom: 12px;
+    }
+
+    #ServiciosC .container{
+        display: block;
+        justify-content: center;
+        text-align: center;
+        padding: 20px 35px;
+            
+    }
+
+    #ServiciosC .carta{
+   
+        justify-content: center;
+        color: white;
+        background-position: center;
+        background-size: cover;
+        padding: 40px 30px;
+        margin: 15px;
+        border-radius: 10px;
+        width: 100%;
+        height:500px;
+    }
+    
+
+    .carta img{
+        transition: all .4s ease-in-out;
+    }
+    .carta.active img{
+        transform: rotate(180deg);
+    }
+    
+    .carta h3{
+        justify-content: space-between;
+        border-radius: 10px;
+        padding: 7px 8px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        margin:0px auto;
+        height: 45px;
+        width: 200px;
+    }
+    .carta .desplegar{
+        transition: all .3s ease-in-out;
+        overflow: hidden;
+        max-height: 0;
+    }
+    .carta.active .desplegar{
+        color: white;
+        max-height: none;
+        overflow: none;
+        padding: 2px 0;
+    }
+    
+    .carta:first-child{
+        background-image: linear-gradient( 
+            0deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)) 
+            ,url("../img/patrocinio.jpg");
+      
+    }
+    .carta:nth-child(2){
+        background-image: linear-gradient( 
+            0deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)) 
+            ,url("../img/asesoria.jpg");
+          
+    }
+    .carta:nth-child(3){
+        background-image: linear-gradient( 
+            0deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)) 
+            ,url("../img/patrocinio.jpg");
+          
+    }
+
+    
+
+}
+
+
+@media only screen and (max-width:700px){
+    .container-blo .imagen-con img {
+        width: 450px;
+        height: 350px;
+        border-radius: 5px;
+    }
+
+    .container-blo .contenido {
+        border: #06283D;
+        margin-bottom: 1%;
+        /* color: white; */
+        color: white;
+        background-color: #256D85;
+        width: 450px;
+        height: 350px;
+        padding: 40px 25px;
+        border-radius: 5px;
+        /* font-size: 5px; */
+    }
+}
+
+@media only screen and (max-width:550px){
+
+    .containerGrid .container-blo {
+        display: grid;
+        gap: 15px;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        justify-items: center;
+        align-items: center;
+    }
+    .container-blo .imagen-con img {
+        width: 350px;
+        height: 250px;
+        border-radius: 5px;
+    }
+
+    .container-blo .contenido {
+        border: #06283D;
+        margin-bottom: 1%;
+        /* color: white; */
+        color: white;
+        background-color: #256D85;
+        width: 350px;
+        height: 350px;
+        padding: 40px 25px;
+        border-radius: 5px;
+        /* font-size: 5px; */
+    }
+}
+
+@media only screen and (max-width:461px){
+
+    .containerGrid .container-blo {
+        display: grid;
+        gap: 15px;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        justify-items: center;
+        align-items: center;
+    }
+    .container-blo .imagen-con img {
+        width: 350px;
+        height: 250px;
+        border-radius: 5px;
+    }
+
+    .container-blo .contenido {
+        border: #06283D;
+        margin-bottom: 1%;
+        /* color: white; */
+        color: white;
+        background-color: #256D85;
+        width: 350px;
+        height: 350px;
+        padding: 40px 25px;
+        border-radius: 5px;
+        /* font-size: 5px; */
+    }
+    .carta h3 {
+        justify-content: space-between;
+        border-radius: 10px;
+        padding: 7px 8px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        margin: 0px auto;
+        height: 45px;
+        width: 150px;
+    }
+}
+
+
+@media only screen and (max-width: 360px){
+   
+   
+
+    .ContenidoLogin .logo-img img {
+        align-items: center;
+        border: 5px solid #256D85;
+        padding: 5px;
+        border-radius: 60px;
+        display: block;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #ServiciosC .container {
+        display: block;
+        justify-content: center;
+        text-align: center;
+        padding: 20px 35px;
+    }
+    .logo {
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+    }
+
+    #hero .logoUg img{
+        width: 300px;
+    }
+    
+ .descripcion {
+    text-align: justify;
+    justify-content: center;
+    margin: 2%;
+    font-size:15px;
+}
+    .containerGrid .container-blo {
+        display: grid;
+        gap: 15px;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        justify-items: center;
+        align-items: center;
+    }
+
+    .container-blo .imagen-con img {
+        width: 330px;
+        height: 240px;
+        border-radius: 5px;
+    }
+
+    .container-blo .contenido {
+        border: #06283D;
+        margin-bottom: 1%;
+        /* color: white; */
+        color: white;
+        background-color: #256D85;
+        width: 330px;
+        height: 400px;
+        padding: 40px 25px;
+        border-radius: 5px;
+        /* font-size: 5px; */
+    }
+
+    section .container .box-container iframe {
+        border: 0;
+        width: 350px;
+        height: 300px;
+    }
+
+    #ServiciosC .containerP {
+        text-align: center;
+        padding: 4rem 0rem 0rem;
+        background: #06283D;
+        color: white;
+    }
+
+    #ServiciosC .carta{
+   
+        justify-content: center;
+        color: white;
+        background-position: center;
+        background-size: cover;
+        padding: 40px 30px;
+        margin: 15px;
+        border-radius: 10px;
+        width: 100%;
+        height:600px;
+    }
+    
+
+    .carta img{
+        transition: all .4s ease-in-out;
+    }
+    .carta.active img{
+        transform: rotate(180deg);
+    }
+    
+    .carta h3 {
+        justify-content: space-between;
+        border-radius: 10px;
+        padding: 7px 8px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        margin: 0px auto;
+        height: 45px;
+        width: 120px;
+    }
+    .carta .desplegar{
+        transition: all .3s ease-in-out;
+        overflow: hidden;
+        max-height: 0;
+    }
+    .carta.active .desplegar{
+        color: white;
+        max-height: none;
+        overflow: none;
+        padding: 2px 0;
+    }
+    
+    .carta:first-child{
+        background-image: linear-gradient( 
+            0deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)) 
+            ,url("../img/patrocinio.jpg");
+      
+    }
+    .carta:nth-child(2){
+        background-image: linear-gradient( 
+            0deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)) 
+            ,url("../img/asesoria.jpg");
+          
+    }
+    .carta:nth-child(3){
+        background-image: linear-gradient( 
+            0deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)) 
+            ,url("../img/patrocinio.jpg");
+          
+    }
+
+    
+
+}
+
+@media only screen and (max-width:200px){
+    .carta h3 {
+        justify-content: space-between;
+        border-radius: 10px;
+        padding: 7px 8px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        margin: 0px auto;
+        height: 45px;
+        width: 120px;
+    }
+    
+}
+
+
+
+
+
+
+

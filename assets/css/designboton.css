@@ -1,0 +1,169 @@
+
+/* boton base */
+.bn3637 {
+  margin: 4px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.20rem 0.4rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    backface-visibility: hidden;
+    border: 0.2rem solid transparent;
+    border-radius: 3px;
+    
+  }
+
+
+  /* nuevo usuario */
+  .bn37 {
+    border-color: transparent;
+    background-color: #689F38;
+    opacity: 1;
+    color: rgb(255, 255, 255);
+    transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+  }
+    
+  .bn37:hover {
+    transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important; 
+ background-color: #558B2F; 
+ color: rgb(255, 255, 255);
+ text-decoration: none;
+  }
+/* Ver usuario */
+  .bn38 {
+    border-color: transparent;
+  /*   background-color: #0097A7; */
+ /*  background-color: #FF7043;  */
+ background-color: #F49917;
+
+    opacity: 1;
+    color: rgb(255, 255, 255);
+    transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+  }
+    
+  .bn38:hover {
+ transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;  
+/*  background-color: #E64A19;   */
+background-color: #F49917;
+
+ color: rgb(255, 255, 255);
+ text-decoration: none;
+  }
+
+  /* nueva asesoria */
+  .bn39 {
+    border-color: transparent;
+    background-color: #F44336;
+    opacity: 1;
+    color: rgb(255, 255, 255);
+    transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+  }
+    
+  .bn39:hover {
+transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;  
+ background-color: #E53935; 
+ color: rgb(255, 255, 255);
+ text-decoration: none;
+  }
+
+ /* volver */
+ .bn40 {
+    border-color: transparent;
+    background-color: #78909C;
+    opacity: 1;
+    color: rgb(255, 255, 255);
+    transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+  }
+    
+  .bn40:hover {
+     transform: perspective(0.5px) scale3d(1.044, 1.044, 1) translateZ(0) !important;  
+ background-color: #546E7A; 
+ color: rgb(255, 255, 255);
+ text-decoration: none;
+  }
+
+   /* Editar */
+ .bn41 {
+    border-color: transparent;
+    background-color: #5C6BC0;
+    opacity: 1;
+    color: rgb(255, 255, 255);
+    transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+  }
+    
+  .bn41:hover {
+     transform: perspective(0.5px) scale3d(1.044, 1.044, 1) translateZ(0) !important;  
+ background-color: #3949AB; 
+ color: rgb(255, 255, 255);
+ text-decoration: none;
+  }
+
+     /* ver asesoria */
+ .bn42 {
+    border-color: transparent;
+    background-color: #FFA000;
+    opacity: 1;
+    color: rgb(255, 255, 255);
+    transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+  }
+    
+  .bn42:hover {
+     transform: perspective(0.5px) scale3d(1.044, 1.044, 1) translateZ(0) !important;  
+ background-color: #EF6C00; 
+ color: rgb(255, 255, 255);
+ text-decoration: none;
+  }
+
+
+     /* ver asesoria */
+.bn43 {
+      border-color: transparent;
+      background-color: #536DFE;
+      opacity: 1;
+      color: rgb(255, 255, 255);
+      transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+}
+      
+.bn43:hover {
+       transform: perspective(0.5px) scale3d(1.044, 1.044, 1) translateZ(0) !important;  
+   background-color: #304FFE; 
+   color: rgb(255, 255, 255);
+   text-decoration: none;
+}
+
+.bn44 {
+  border-color: transparent;
+  background-color: #26A69A;
+  opacity: 1;
+  color: rgb(255, 255, 255);
+  transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+}
+  
+.bn44:hover {
+   transform: perspective(0.5px) scale3d(1.044, 1.044, 1) translateZ(0) !important;  
+background-color: #00796B; 
+color: rgb(255, 255, 255);
+text-decoration: none;
+}
+
+
+
+/* .bn3637 .dd4 {
+  border-color: transparent;
+  background-color: #F44336;
+  opacity: 1;
+  color: rgb(255, 255, 255);
+  transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+}
+  
+.bn44:hover {
+   transform: perspective(0.5px) scale3d(1.044, 1.044, 1) translateZ(0) !important;  
+background-color: #E53935; 
+color: rgb(255, 255, 255);
+}
+   */

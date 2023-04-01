@@ -1,0 +1,328 @@
+
+/* ESTILOS DEL FORMULARIO DE NUEVO REGISTRO  */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 1;
+    display:flow-root;
+    background-repeat:  no-repeat;
+    width: 24px;
+    height: 24px;
+   position:relative;
+    left: -85%;
+}
+
+input::-webkit-datetime-edit-fields-wrapper {
+
+    position: relative;
+    left: 20%;
+}
+
+/* DISEÑO DE LOS FORMULARIOS*/
+ .contenidoDescripcion{
+    background: #256D85;
+    padding: 15px;
+    padding-top: 20px;
+    color: white;
+    font-size: 15px;
+	text-align:center;
+  }
+  .contenidoDescripcion h3{
+    font-size: 20px;
+  }
+   
+  .formularios {
+    padding: 25px;
+    padding-top: 30px;
+  /*   background: #F9F9F9;; */
+  background: #e9ecef;
+    margin: 0 auto;
+	box-shadow: 0px 0px 1px 0.1px #06283d;
+    
+  }
+  .formularios h2{
+    color: #256D85;
+    text-align: center;
+
+  }
+  .formularios h2{
+    color: #256D85;
+    text-align: center;
+	font-weight: 700;
+  }
+  .formularios p{
+    color: #256D85;
+    width: auto;
+	font-weight: 700;
+    border-bottom: 2px solid #256D85;
+	padding-left: 5px;
+  }
+
+  .formItem {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr ));
+    padding: 10px;
+  }
+
+
+  .form-box input, textarea{
+    padding: 10px;
+	/* width: 100%; */
+  display: block;
+   font-size: 1rem;
+   font-weight: 400;
+   line-height: 1.5;
+   color: #212529;
+   background-color: #ffffff;
+   background-clip: padding-box;
+   border: 1px solid #ced4da;
+   appearance: none;
+   border-radius: .25rem;
+   transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  } 
+
+  .form-box select{
+    padding: 10px;
+
+	width: 100%;
+
+
+  display: block;
+/* 
+   font-size: 1rem;
+   font-weight: 400;
+   line-height: 1.5; */
+   color: #212529;
+   background-color: #ffffff;
+   background-clip: padding-box;
+   border: 1px solid #ced4da;
+
+   border-radius: .25rem;
+   transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+  }
+
+  .form-box label{
+    font-weight: 600;
+   /*  color: rgba(1, 41, 112, 0.6); */
+    color: #256D85;
+  }
+
+
+  .formItem .form-box{
+    border: 5px;
+    padding: 20px;
+   display: flex;
+    flex-direction: column; 
+  }
+
+  .error {
+    text-align: center;
+    color: red;
+    font-size: 15px;
+  }
+
+  .lbl-titulo-of{
+	display: none;
+	}
+		
+	.lbl{
+		display: block;
+		font-size: 13px;
+		color: rgb(180, 17, 17);
+		font-weight:700;
+	}
+
+
+ /*Estilos de Validar*/ 
+
+.form-box.ok input {
+    border: 2px solid;
+/*     border-color: #08ffc8;
+ */	border-color: #0dbf97;
+	/* background-image: url(../img/checkbox-f.svg); */
+	background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: right;
+}
+.form-box.falla input {
+    border: 2px solid;
+    border-color: #fe5f55;
+/* 	background-image: url(../img/error-warning.svg); */
+	background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: right;
+}
+
+.form-box.fallar input {
+	border: 1px solid;
+    border-color: #333232;
+	
+	/* color: #bb2929; */
+}
+
+
+.form-box span {
+    visibility: hidden;
+   /*  position: absolute; */
+    font-size: small;
+    font-weight: 500;
+    text-align: right;
+}
+
+.form-box.falla span {
+    visibility: visible;
+    color:#e74c3c;
+	font-weight: 700;
+}
+
+.form-box.fallar span {
+    visibility: visible;
+    color: black;
+	font-weight: 600;
+	opacity: .8;
+}
+
+.form-box.ok span {
+    visibility: visible;
+    color: #0dbf97;
+	font-weight: 700;
+}
+
+.form-inline {
+    border: 1px solid #ccc;
+    padding: 8px 10px 4px;
+    border-radius: 2px;
+}
+.form-inline label, .form-inline input {
+    display: inline-block;
+    width: auto;
+    padding-right: 15px;
+}
+.error {
+    color: red;
+    font-size: 90%;
+}
+
+/* DISEÑO DEL INPUT DE FILE PARA EL FORMULARIO DE PATROCINIO */
+
+   /* Esconder el input de tipo file por defecto */
+   .file-input {
+    display: none;
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+  
+  /* Diseño del contenedor de arrastrar y soltar */
+  .drag-drop-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 5px dashed #ccc;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .drag-drop-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 16px;
+    color: #999;
+    height: 100%;
+    width: 100%;
+  }
+  
+  
+  /* Estilos para cuando se arrastra un archivo sobre el contenedor */
+  .drag-drop-container.dragging {
+    border-color: #007bff;
+  }
+  
+  .drag-drop-message.dragging {
+    color: #007bff;
+  }
+  
+  /* Estilos para cuando se suelta un archivo dentro del contenedor */
+  .drag-drop-container.dropped {
+    border-color: #28a745;
+  }
+  
+  .drag-drop-message.dropped {
+    color: #28a745;
+  }
+  
+  /* Icono de arrastrar y soltar */
+  .drag-drop-message i {
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+  
+  /* Estilos para el input de tipo file */
+  .file-input:focus + .drag-drop-message {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+  }
+
+  .home-Contador{
+    color: #012970;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+   }
+
+   .home-Contador span {
+    clear: both;
+    display: block;
+}
+
+.home-Contador span h6 {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+    text-align: right;
+}
+
+  
+/* ------------------------------------------------------ */
+select{
+    outline: none!important;
+}
+.input-4{
+    border:1px solid red;
+}
+
+
+table tbody .info {
+	font-weight: 0;
+} 
+  @media (max-width: 1150px) {
+
+	.home-content .sales-boxes{
+	  flex-direction: column;
+	}
+	.home-content .sales-boxes .box{
+	  width: 100%;
+	  overflow-x: scroll;
+	  margin-bottom: 30px;
+	}
+	.home-content .sales-boxes .top-sales{
+	  margin: 0;
+	}
+  }
+  
+
+@media (max-width:769px){
+	.content .content-box .box-2 {
+		grid-template-columns: 1fr;
+	}
+}
+
